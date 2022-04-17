@@ -1,15 +1,17 @@
 // Component Styling
-@import "./scss/__about-component";
-@import "./scss/__contact-component";
-@import "./scss/__experience-component";
-@import "./scss/__footer-component";
-@import "./scss/__header-component";
-@import "./scss/__nav-component";
-@import "./scss/__portfolio-component";
-@import "./scss/__testimonials-component";
-@import "./scss/__services-component";
+
+@import "./scss/_about-component";
+@import "./scss/_contact-component";
+@import "./scss/_experience-component";
+@import "./scss/_footer-component";
+@import "./scss/_header-component";
+@import "./scss/_nav-component";
+@import "./scss/_portfolio-component";
+@import "./scss/_testimonials-component";
+@import "./scss/_services-component";
 
 //Fonts
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 //Styling
