@@ -55,7 +55,7 @@ body {
 // General Styles
 .container {
     width: var(--container-width-lg);
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 h1,
@@ -92,27 +92,27 @@ section {
 a {
     color: var(--color-primary);
     transition: var(--transition);
+}
 
-    :hover {
-        color: var(--color-white);
-    }
+a:hover {
+    color: var(--color-white);
 }
 
 .btn {
     width: max-content;
     display: inline-block;
     color: var(--color-primary);
-    padding: 0.75rem, 1.2rem;
+    padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
+}
 
-    :hover {
-        background: var(--color-white);
-        color: var(--color-bg);
-        border-color: transparent;
-    }
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
 }
 
 .btn-primary {
