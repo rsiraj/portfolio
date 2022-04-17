@@ -74,6 +74,7 @@ h1 {
 
 section {
     margin-top: 8rem;
+    height: 100vh;
 
     >h2,
     >h5 {
@@ -94,11 +95,13 @@ section {
 a {
     color: var(--color-primary);
     transition: var(--transition);
+
+    &:hover {
+        color: var(--color-white);
+    }
 }
 
-a:hover {
-    color: var(--color-white);
-}
+
 
 .btn {
     width: max-content;
@@ -109,13 +112,14 @@ a:hover {
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
+
+    &:hover {
+        background: var(--color-white);
+        color: var(--color-bg);
+        border-color: transparent;
+    }
 }
 
-.btn:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
-    border-color: transparent;
-}
 
 .btn-primary {
     background: var(--color-primary);
@@ -130,6 +134,7 @@ img {
 
 // Media Queries
 
+// Tablet view
 @media screen and (max-width: 1024px) {
     .container {
         width: var(--container-width-md);
@@ -140,6 +145,7 @@ img {
     }
 }
 
+// Mobile view
 @media screen and (max-width: 600px) {
     .container {
         width: var(--container-width-sm);
