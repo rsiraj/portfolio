@@ -1,7 +1,7 @@
 .container.contact__container {
     width: 58%;
     display: grid;
-    grid-template-columns: 30% 58%;
+    // grid-template-columns: 30% 58%;
     gap: 12%;
 }
 
@@ -45,6 +45,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    align-items: center;
 }
 
 input, textarea {
