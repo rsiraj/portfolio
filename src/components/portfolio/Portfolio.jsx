@@ -3,44 +3,44 @@ import IMG1 from "../../assets/portfolio1.jpg";
 import IMG2 from "../../assets/portfolio2.jpg";
 import IMG3 from "../../assets/portfolio3.jpg";
 import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
+import IMG5 from "../../assets/portfolio5.jpg";
 import IMG6 from "../../assets/portfolio6.jpg";
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Title of Project1",
-    github: "https://github.com",
-    demo: "http://fithub.site",
+    title: "Gateway Redesign - Travel Guide",
+    github: "https://github.com/rsiraj/gateway",
+    demo: "https://rsiraj.github.io/gateway/index.html",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Title of Project2",
-    github: "https://github.com",
-    demo: "http://fithub.site",
+    title: "Social Justice - Doctors Against Disparities in Healthcare",
+    github: "https://github.com/rsiraj/socialjustice",
+    demo: "https://rsiraj.github.io/socialjustice/index.html",
   },
   {
     id: 3,
     image: IMG3,
-    title: "Title of Project3",
-    github: "https://github.com",
+    title: "HOPE Hacks - FitHub",
+    github: "https://github.com/rsiraj/hopehacks",
     demo: "http://fithub.site",
   },
   {
     id: 4,
     image: IMG4,
-    title: "Title of Project4",
-    github: "https://github.com",
-    demo: "http://fithub.site",
+    title: "Redesign - Tesla Clone",
+    github: "https://github.com/rsiraj/teslaclone",
+    demo: "http://c9tesla.com/",
   },
   {
     id: 5,
     image: IMG5,
-    title: "Title of Project5",
-    github: "https://github.com",
-    demo: "http://fithub.site",
+    title: "Ecommerce - Plant Heaven",
+    github: "https://github.com/rsiraj/ecommercev2",
+    demo: "https://plantheaven.herokuapp.com/",
   },
   {
     id: 6,
