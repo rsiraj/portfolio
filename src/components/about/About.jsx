@@ -17,7 +17,7 @@ const About = () => {
           </div>
         </div>
         <div className="about__content">
-          <div className="about__cards">
+          {/* <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
@@ -35,7 +35,7 @@ const About = () => {
               <h5>Projects</h5>
               <small>10+ Completed</small>
             </article>
-          </div>
+          </div> */}
 
           <p>
             I am an aspiring full stack engineer, currently partaking in a 6
@@ -47,7 +47,7 @@ const About = () => {
             Liverpool FC.
           </p>
           <a href="#contact" className="btn btn-primary">
-            Let's Talk!
+            Send me a message
           </a>
         </div>
       </div>
