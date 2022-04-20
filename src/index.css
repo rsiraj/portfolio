@@ -325,6 +325,10 @@ footer a {
   background: transparent;
   color: var(--color-bg);
   border-color: var(--color-bg);
+  /* IE 9 */
+  -webkit-transform: scale(1.25);
+  /* Safari 3-8 */
+  transform: scale(1.25);
 }
 
 .footer__copyright {
@@ -385,6 +389,11 @@ header {
   bottom: 3rem;
 }
 
+.header__socials a {
+  -webkit-animation: float 3s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
+}
+
 .header__socials::after {
   content: "";
   width: 1px;
@@ -413,6 +422,46 @@ header {
           transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+    -webkit-transform: scale(1.75);
+            transform: scale(1.75);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+    -webkit-transform: scale(1.75);
+            transform: scale(1.75);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@media screen and (min-width: 601px) and (max-height: 950px) {
+  .me {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -488,6 +537,16 @@ nav a.active {
   border: 1px solid transparent;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .portfolio__item h3 {
@@ -675,10 +734,10 @@ nav a.active {
 :root {
   --color-bg: #0E262F;
   --color-bg-variant: #13333E;
-  --color-primary: #EC9A29;
-  --color-primary-variant: rgba(236, 154, 41, 0.4);
+  --color-primary: #079C7E;
+  --color-primary-variant: rgba(7, 156, 126, 0.4);
   --color-white: #DAD2D8;
-  --color-light: rgba(33, 228, 232, 0.6);
+  --color-light: rgba(240, 229, 230, 0.6);
   --transition: all 400ms ease;
   --container-width-lg: 75%;
   --container-width-md: 86%;
