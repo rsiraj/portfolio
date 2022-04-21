@@ -461,6 +461,12 @@ header {
   }
 }
 
+@media screen and (min-height: 885px) {
+  .me {
+    bottom: 0.5rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header {
     height: 68vh;

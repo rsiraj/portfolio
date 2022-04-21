@@ -78,7 +78,11 @@ header {
 }
 
 // Media Queries
-
+@media screen and (min-height: 885px) {
+    .me {
+        bottom: 0.5rem;
+    }
+}
 
 // Tablet view
 @media screen and (max-width: 1024px) {
