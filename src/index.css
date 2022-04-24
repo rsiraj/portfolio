@@ -193,7 +193,7 @@ input, textarea {
   }
 }
 
-.experience__container {
+.skills__container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -201,7 +201,7 @@ input, textarea {
   gap: 2rem;
 }
 
-.experience__child {
+.skills__child {
   background: var(--color-bg-variant);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
@@ -210,27 +210,30 @@ input, textarea {
   transition: var(--transition);
 }
 
-.experience__child:hover {
+.skills__child:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
 }
 
-.experience__child > h3 {
+.skills__child > h3 {
   text-align: center;
   margin-bottom: 2rem;
   color: var(--color-primary);
 }
 
-.experience__content {
+.skills__content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   row-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.experience__details {
+.skills__details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,33 +243,56 @@ input, textarea {
           justify-content: center;
 }
 
-.experience__details-icon {
+.skills__details > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills__details > div > img {
+  max-width: 100px;
+}
+
+.skills__details-icon {
   margin-top: 6px;
   color: var(--color-primary);
 }
 
 @media screen and (max-width: 1024px) {
-  .experience__container {
+  .skills__container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .experience__child {
+  .skills__child {
     width: 80%;
     padding: 2rem;
     margin: 0 auto;
   }
-  .experience__content {
+  .skills__content {
     padding: 1rem;
+  }
+  .skills__details > div > img {
+    max-width: 75px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .experience__container {
+  .skills__container {
     gap: 1rem;
   }
-  .experience__child {
+  .skills__child {
     width: 100%;
     padding: 2rem 1rem;
+  }
+  .skills__details > div > img {
+    max-width: 40px;
   }
 }
 
@@ -458,12 +484,6 @@ header {
   100% {
     -webkit-transform: translatey(0px);
             transform: translatey(0px);
-  }
-}
-
-@media screen and (min-height: 885px) {
-  .me {
-    bottom: 0.5rem;
   }
 }
 
