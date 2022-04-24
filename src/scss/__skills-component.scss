@@ -27,7 +27,7 @@
 .skills__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    gap: 2rem;
     align-items: center;
 
 }
@@ -42,7 +42,8 @@
         align-items: center;
     }
     >div>img {
-        max-width: 100px;
+        width: 100%;
+        max-width: 110px;
     }
 }
 
@@ -68,7 +69,8 @@
     }
     .skills__details {
         >div>img {
-            max-width: 75px;
+            width: 100%;
+            max-width: 80px;
         }
     }
 }
@@ -84,7 +86,8 @@
     }
     .skills__details {
         >div>img {
-            max-width: 40px;
+            width: 100%;
+            max-width: 50px;
         }
     }
 }

@@ -227,7 +227,7 @@ input, textarea {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+  gap: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -257,7 +257,8 @@ input, textarea {
 }
 
 .skills__details > div > img {
-  max-width: 100px;
+  width: 100%;
+  max-width: 110px;
 }
 
 .skills__details-icon {
@@ -279,7 +280,8 @@ input, textarea {
     padding: 1rem;
   }
   .skills__details > div > img {
-    max-width: 75px;
+    width: 100%;
+    max-width: 80px;
   }
 }
 
@@ -292,7 +294,8 @@ input, textarea {
     padding: 2rem 1rem;
   }
   .skills__details > div > img {
-    max-width: 40px;
+    width: 100%;
+    max-width: 50px;
   }
 }
 
