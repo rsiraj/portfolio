@@ -241,6 +241,10 @@ input, textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .skills__details > div {
@@ -254,6 +258,11 @@ input, textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skills__details > div > h4 {
+  margin-top: 12px;
+  text-align: center;
 }
 
 .skills__details > div > img {

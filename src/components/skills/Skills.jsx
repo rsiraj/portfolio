@@ -11,6 +11,50 @@ import mysqlLogo from "../../assets/mysql.svg";
 import mdbLogo from "../../assets/mongodb.svg";
 import awsLogo from "../../assets/aws.svg";
 
+const front = [
+  {
+    skill: "HTML 5",
+    image: htmlLogo,
+  },
+  {
+    skill: "CSS",
+    image: cssLogo,
+  },
+  {
+    skill: "SASS",
+    image: sassLogo,
+  },
+  {
+    skill: "JavaScript",
+    image: jsLogo,
+  },
+  {
+    skill: "ReactJS",
+    image: reactLogo,
+  },
+  {
+    skill: "Bootstrap",
+    image: bsLogo,
+  },
+];
+const back = [
+  {
+    skill: "NodeJS",
+    image: nodeLogo,
+  },
+  {
+    skill: "MySQL",
+    image: mysqlLogo,
+  },
+  {
+    skill: "MongoDB",
+    image: mdbLogo,
+  },
+  {
+    skill: "Amazon Web Services",
+    image: awsLogo,
+  },
+];
 const Skills = () => {
   return (
     <section id="skills">
@@ -21,90 +65,34 @@ const Skills = () => {
         <div className="skills__child">
           <h3>Frontend Development</h3>
           <div className="skills__content">
-            <article className="skills__details">
-              <div>
-                <img src={htmlLogo} alt="HTML 5 Logo" />
-                <h4>HTML 5</h4>
-                <BsPatchCheckFill className="skills__details-icon" />
-              </div>
-            </article>
-
-            <article className="skills__details">
-              <div>
-                <img src={cssLogo} alt="CSS 3 Logo" />
-                <h4>CSS</h4>
-                <BsPatchCheckFill className="skills__details-icon" />
-              </div>
-            </article>
-
-            <article className="skills__details">
-              <div>
-                <img src={sassLogo} alt="SASS Logo" />
-                <h4>SASS</h4>
-                <BsPatchCheckFill className="skills__details-icon" />
-              </div>
-            </article>
-
-            <article className="skills__details">
-              <div>
-                <img src={jsLogo} alt="JavaScript Logo" />
-                <h4>JavaScript</h4>
-                <BsPatchCheckFill className="skills__details-icon" />
-              </div>
-            </article>
-
-            <article className="skills__details">
-              <div>
-                <img src={reactLogo} alt="React Logo" />
-                <h4>ReactJS</h4>
-                <BsPatchCheckFill className="skills__details-icon" />
-              </div>
-            </article>
-
-            <article className="skills__details">
-              <div>
-                <img src={bsLogo} alt="BootStrap Logo" />
-                <h4>Bootstrap</h4>
-                <BsPatchCheckFill className="skills__details-icon" />
-              </div>
-            </article>
+            {front.map(({ skill, image }, index) => {
+              return (
+                <article className="skills__details" key={index}>
+                  <div>
+                    <img src={image} alt={skill} />
+                    <h4>{skill}</h4>
+                    <BsPatchCheckFill className="skills__details-icon" />
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
 
         <div className="skills__child">
           <h3>Backend Development</h3>
           <div className="skills__content">
-            <article className="skills__details">
-              <div>
-                <img src={nodeLogo} alt="NodeJS Logo" />
-                <h4>NodeJS</h4>
-                <BsPatchCheckFill className="skills__details-icon" />
-              </div>
-            </article>
-
-            <article className="skills__details">
-              <div>
-                <img src={mysqlLogo} alt="MySQL Logo" />
-                <h4>MySQL</h4>
-                <BsPatchCheckFill className="skills__details-icon" />
-              </div>
-            </article>
-
-            <article className="skills__details">
-              <div>
-                <img src={mdbLogo} alt="MongoDB Logo" />
-                <h4>MongoDB</h4>
-                <BsPatchCheckFill className="skills__details-icon" />
-              </div>
-            </article>
-
-            <article className="skills__details">
-              <div>
-                <img src={awsLogo} alt="AWS Logo" />
-                <h4>AWS</h4>
-                <BsPatchCheckFill className="skills__details-icon" />
-              </div>
-            </article>
+            {back.map(({ skill, image }, index) => {
+              return (
+                <article className="skills__details" key={index}>
+                  <div>
+                    <img src={image} alt={skill} />
+                    <h4>{skill}</h4>
+                    <BsPatchCheckFill className="skills__details-icon" />
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </div>
