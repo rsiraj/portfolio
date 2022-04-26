@@ -42,13 +42,13 @@ const data = [
     github: "https://github.com/rsiraj/ecommercev2",
     demo: "https://plantheaven.herokuapp.com/",
   },
-  {
-    id: 6,
-    image: IMG6,
-    title: "Title of Project6",
-    github: "https://github.com",
-    demo: "http://fithub.site",
-  }
+  // {
+  //   id: 6,
+  //   image: IMG6,
+  //   title: "Title of Project6",
+  //   github: "https://github.com",
+  //   demo: "http://fithub.site",
+  // }
 ];
 
 const Portfolio = () => {

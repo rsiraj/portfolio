@@ -46,10 +46,10 @@ const back = [
     skill: "MySQL",
     image: mysqlLogo,
   },
-  {
-    skill: "MongoDB",
-    image: mdbLogo,
-  },
+  // {
+  //   skill: "MongoDB",
+  //   image: mdbLogo,
+  // },
   {
     skill: "Amazon Web Services",
     image: awsLogo,
